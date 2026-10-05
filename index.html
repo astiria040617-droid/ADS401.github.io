@@ -1,78 +1,102 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 语气 A/B 测试</title>
+  <title>AI Integration at XJTLU</title>
   <style>
-    :root { --blue:#2563eb; --dark:#14213d; --light:#f4f7fb; --line:#d9e1ed; }
+    :root { --blue:#2563eb; --navy:#14213d; --light:#f4f7fb; --line:#d9e1ed; }
     * { box-sizing:border-box; }
-    body { margin:0; background:var(--light); color:#1f2937; font:16px/1.7 Arial, "Microsoft YaHei", sans-serif; }
+    body { margin:0; color:#1f2937; background:var(--light); font:16px/1.7 Arial, sans-serif; }
     header { padding:64px 24px 52px; color:white; background:linear-gradient(120deg,#172554,#2563eb); }
     main, header > div { max-width:920px; margin:auto; }
     h1 { margin:0 0 10px; font-size:clamp(2rem,5vw,3.25rem); }
     header p { margin:0; font-size:1.15rem; }
     section { margin:22px 0; padding:28px; background:white; border-radius:14px; box-shadow:0 2px 12px #1e3a5f12; }
-    h2 { margin:0 0 14px; color:var(--dark); font-size:1.45rem; }
-    .highlight { border-left:5px solid var(--blue); padding:14px 18px; background:#eff6ff; border-radius:0 8px 8px 0; }
+    h2 { margin:0 0 14px; color:var(--navy); font-size:1.45rem; }
+    .highlight { margin:0; padding:14px 18px; background:#eff6ff; border-left:5px solid var(--blue); border-radius:0 8px 8px 0; }
+    .ai-card { display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center; }
+    .ai-card img { width:100%; border:1px solid var(--line); border-radius:10px; }
     .groups { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
     .group { padding:20px; border:1px solid var(--line); border-radius:10px; }
     .group h3 { margin:0 0 8px; color:var(--blue); }
+    .group p { margin:0; }
     table { width:100%; border-collapse:collapse; margin-top:12px; }
     th, td { padding:13px; border:1px solid var(--line); text-align:left; vertical-align:top; }
-    th { background:#eff6ff; color:var(--dark); }
-    ol { padding-left:24px; margin-bottom:0; }
-    footer { max-width:920px; margin:0 auto; padding:12px 24px 36px; text-align:center; color:#64748b; }
-    @media (max-width:600px) { .groups { grid-template-columns:1fr; } section { padding:20px; } }
+    th { color:var(--navy); background:#eff6ff; }
+    ol { margin-bottom:0; padding-left:24px; }
+    footer { max-width:920px; margin:auto; padding:12px 24px 36px; color:#64748b; text-align:center; }
+    @media (max-width:650px) { .ai-card, .groups { grid-template-columns:1fr; } section { padding:20px; } }
   </style>
 </head>
 <body>
   <header><div>
-    <h1>AI 语气 A/B 测试</h1>
-    <p>比较共情型 AI 与分析型 AI 的用户体验</p>
+    <h1>AI Integration at XJTLU</h1>
+    <p>AI Tone A/B Test</p>
   </div></header>
+
   <main>
     <section>
-      <h2>实验目标</h2>
-      <p class="highlight">研究不同的 AI 语气是否会影响西浦学生的使用时间、任务完成情况和满意程度。</p>
-    </section>
-    <section>
-      <h2>参与者</h2>
-      <p>招募 <strong>20–40 名西交利物浦大学学生</strong>参加小样本 A/B 测试。</p>
-    </section>
-    <section>
-      <h2>自变量：AI 语气</h2>
-      <div class="groups">
-        <div class="group"><h3>A 组：共情型 AI</h3><p>参与者体验使用共情型语气回应的 AI。</p></div>
-        <div class="group"><h3>B 组：分析型 AI</h3><p>参与者体验使用分析型语气回应的 AI。</p></div>
+      <h2>AI Used in This Study</h2>
+      <div class="ai-card">
+        <div>
+          <p><strong>Career Buddy Xiaoshang</strong> is the AI used in this study.</p>
+          <p>It is an XJTLU AI agent that supports students with career-related questions and resources.</p>
+        </div>
+        <img src="career-buddy-xiaoshang.png" alt="Screenshot of Career Buddy Xiaoshang, the AI used in this study">
       </div>
     </section>
+
     <section>
-      <h2>实验设计</h2>
-      <p>采用随机实验设计。参与者随机、对半分配到 A 组或 B 组，每位参与者只体验其中一种 AI 语气。</p>
-      <table><tr><th>组别</th><th>AI 语气</th></tr><tr><td>A 组</td><td>共情型</td></tr><tr><td>B 组</td><td>分析型</td></tr></table>
+      <h2>Experiment Goal</h2>
+      <p class="highlight">To examine whether different AI tones affect XJTLU students’ usage time, task completion, and satisfaction.</p>
     </section>
+
     <section>
-      <h2>因变量与数据收集</h2>
+      <h2>Participants</h2>
+      <p>A small-sample A/B test with <strong>20–40 XJTLU students</strong>.</p>
+    </section>
+
+    <section>
+      <h2>Independent Variable: AI Tone</h2>
+      <div class="groups">
+        <div class="group"><h3>Group A: Empathetic AI</h3><p>Participants use an AI with an empathetic tone.</p></div>
+        <div class="group"><h3>Group B: Analytical AI</h3><p>Participants use an AI with an analytical tone.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Study Design</h2>
+      <p>This is a randomised experiment. Participants are randomly assigned equally to Group A or Group B, and each participant experiences only one AI tone.</p>
       <table>
-        <tr><th>指标</th><th>收集方式</th></tr>
-        <tr><td>用户平均使用时长</td><td>记录参与者的停留时长。</td></tr>
-        <tr><td>任务完成率</td><td>记录参与者是否完成任务。</td></tr>
-        <tr><td>用户满意程度</td><td>通过问卷调查收集。</td></tr>
-        <tr><td>用户感受</td><td>通过访谈收集参与者对 AI 的感受。</td></tr>
+        <tr><th>Group</th><th>AI Tone</th></tr>
+        <tr><td>Group A</td><td>Empathetic</td></tr>
+        <tr><td>Group B</td><td>Analytical</td></tr>
       </table>
     </section>
+
     <section>
-      <h2>实验流程</h2>
+      <h2>Dependent Variables and Data Collection</h2>
+      <table>
+        <tr><th>Measure</th><th>Data Collection</th></tr>
+        <tr><td>Average usage time</td><td>Record the time participants spend using the AI.</td></tr>
+        <tr><td>Task completion rate</td><td>Record whether participants complete the task.</td></tr>
+        <tr><td>User satisfaction</td><td>Collect responses through a questionnaire survey.</td></tr>
+        <tr><td>User feelings</td><td>Collect participants’ feelings through interviews.</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Experimental Procedure</h2>
       <ol>
-        <li>招募 20–40 名西浦学生。</li>
-        <li>随机将参与者对半分配至共情型 AI 组或分析型 AI 组。</li>
-        <li>参与者体验对应语气的 AI 并完成任务。</li>
-        <li>记录停留时长和任务完成率。</li>
-        <li>参与者完成满意度问卷，并进行访谈以收集感受。</li>
+        <li>Recruit 20–40 XJTLU students.</li>
+        <li>Randomly assign participants equally to the empathetic-AI group or analytical-AI group.</li>
+        <li>Participants use the assigned AI tone and complete the task.</li>
+        <li>Record usage time and task completion rate.</li>
+        <li>Participants complete a satisfaction questionnaire and take part in an interview about their feelings.</li>
       </ol>
     </section>
   </main>
-  <footer>AI Tone A/B Test</footer>
+  <footer>AI Integration at XJTLU</footer>
 </body>
 </html>
