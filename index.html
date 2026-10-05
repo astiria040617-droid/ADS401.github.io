@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Integration at XJTLU — Study Proposal</title>
+  <style>
+    :root { --navy:#103b66; --blue:#1674b9; --pale:#eef6fc; --ink:#17212b; --muted:#5b6875; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:#f6f8fb; font:16px/1.65 Arial, sans-serif; }
+    header { color:white; padding:68px 24px 58px; background:linear-gradient(135deg,var(--navy),var(--blue)); }
+    .wrap { max-width:1000px; margin:auto; }
+    h1 { font-size:clamp(2rem,5vw,3.4rem); line-height:1.1; margin:0 0 14px; }
+    h2 { color:var(--navy); margin-top:0; font-size:1.45rem; }
+    .subtitle { max-width:700px; font-size:1.15rem; margin:0; opacity:.94; }
+    main { padding:30px 24px 60px; }
+    section { background:white; padding:28px; border-radius:14px; margin:20px 0; box-shadow:0 2px 14px #17324c12; }
+    .tag { display:inline-block; color:#075283; background:#dceffc; padding:4px 10px; border-radius:99px; font-size:.86rem; font-weight:bold; margin:0 6px 8px 0; }
+    table { width:100%; border-collapse:collapse; margin-top:15px; overflow:hidden; border-radius:8px; }
+    th,td { padding:13px; border:1px solid #dce4eb; text-align:left; vertical-align:top; }
+    th { background:var(--pale); color:var(--navy); }
+    li { margin:7px 0; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .card { background:var(--pale); padding:18px; border-radius:10px; border-left:5px solid var(--blue); }
+    .step { display:flex; gap:14px; align-items:flex-start; margin:14px 0; }
+    .num { flex:0 0 32px; height:32px; border-radius:50%; color:white; background:var(--blue); font-weight:bold; display:grid; place-items:center; }
+    footer { text-align:center; color:var(--muted); padding:20px; }
+    @media (max-width:650px) { .grid { grid-template-columns:1fr; } section { padding:20px; } th,td { padding:9px; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <p class="tag">ADS401 Experimental Design</p>
+    <h1>AI Integration at XJTLU</h1>
+    <p class="subtitle">A proposed study of whether generative AI and responsible-use guidance improve students’ task performance, learning, and experience.</p>
+  </div></header>
+  <main class="wrap">
+    <section>
+      <h2>1. Why conduct a formative study?</h2>
+      <p>Yes. Before the main experiment, we would conduct short interviews or a survey with 8–12 XJTLU students (and, if possible, several teachers). This identifies realistic uses of AI, such as explaining concepts, summarising reading, coding support and English writing, as well as concerns about inaccuracy, academic integrity and prompt-writing ability.</p>
+    </section>
+    <section>
+      <h2>2. Participants and task</h2>
+      <p><strong>Participants:</strong> 40–60 XJTLU undergraduate or postgraduate students, recruited across disciplines. They should have experience of completing English-medium academic tasks.</p>
+      <p><strong>Task:</strong> Read a short course-related English text and data table; write a concise summary, answer comprehension questions, and propose a simple evidence-based solution. The task is identical for all groups.</p>
+    </section>
+    <section>
+      <h2>3–4. Independent variables and experimental design</h2>
+      <div class="grid">
+        <div class="card"><strong>IV1: AI availability</strong><br>Generative AI available / not available</div>
+        <div class="card"><strong>IV2: AI guidance</strong><br>Responsible-use guidance provided / not provided</div>
+      </div>
+      <p>This is a <strong>2 × 2 between-group factorial design</strong>. Each participant completes only one condition, reducing carryover and learning effects. There are four experimental conditions.</p>
+      <table>
+        <tr><th></th><th>No AI guidance</th><th>AI guidance provided</th></tr>
+        <tr><th>AI unavailable</th><td><strong>C1: Baseline</strong><br>Normal study using provided materials.</td><td><strong>C2: Guidance only</strong><br>Learn principles, but do not use AI in the task.</td></tr>
+        <tr><th>AI available</th><td><strong>C3: AI only</strong><br>Use AI freely, without extra guidance.</td><td><strong>C4: AI + guidance</strong><br>Use AI with prompt, verification and citation guidance.</td></tr>
+      </table>
+    </section>
+    <section>
+      <h2>5. Dependent variables</h2>
+      <table>
+        <tr><th>Outcome</th><th>How it is measured</th></tr>
+        <tr><td>Task performance</td><td>Rubric-based score for accuracy, completeness and reasoning quality.</td></tr>
+        <tr><td>Efficiency</td><td>Time in minutes to complete the task.</td></tr>
+        <tr><td>Learning</td><td>Short individual comprehension test completed without AI.</td></tr>
+        <tr><td>Cognitive workload</td><td>Short workload rating, for example a 1–7 scale or NASA-TLX items.</td></tr>
+        <tr><td>Trust and responsible use</td><td>Ratings of AI reliability plus evidence of checking sources and acknowledging AI use.</td></tr>
+      </table>
+    </section>
+    <section>
+      <h2>6. Baseline condition</h2>
+      <p>The baseline is students’ normal non-AI study approach: they receive the same learning materials, task, device, time limit and scoring criteria, but cannot use generative AI. This makes AI availability and guidance the key differences between groups.</p>
+    </section>
+    <section>
+      <h2>7 &amp; 9. Procedure</h2>
+      <div class="step"><div class="num">1</div><div><strong>Consent and background survey</strong><br>Collect discipline, year of study and prior AI experience (about 10 minutes).</div></div>
+      <div class="step"><div class="num">2</div><div><strong>Random assignment</strong><br>Allocate each student to one of the four conditions; show guidance only when required (about 5 minutes).</div></div>
+      <div class="step"><div class="num">3</div><div><strong>Academic task</strong><br>Complete the standardised learning task (about 25 minutes).</div></div>
+      <div class="step"><div class="num">4</div><div><strong>Learning test and questionnaire</strong><br>Complete a no-AI quiz and ratings of workload, trust and experience (about 20 minutes).</div></div>
+      <p><strong>Total duration per participant:</strong> approximately 55–65 minutes.</p>
+    </section>
+    <section>
+      <h2>Research focus</h2>
+      <p>The study asks whether AI improves performance and efficiency, and whether guidance helps students use AI more critically and responsibly rather than simply relying on its output.</p>
+      <span class="tag">Performance</span><span class="tag">Learning</span><span class="tag">Academic integrity</span><span class="tag">Student experience</span>
+    </section>
+  </main>
+  <footer>AI Integration at XJTLU · Experimental Study Proposal</footer>
+</body>
+</html>
