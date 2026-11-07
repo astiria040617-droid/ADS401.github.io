@@ -1,10 +1,3 @@
-非常抱歉！我之前的重点确实都在《测量手册》那份长文档上，**完全漏掉了《实验现场执行清单》这份极其重要的“研究员操作手册”**。这份清单里的每句话（包括具体的台词、引导语、以及“打开录音设备”这种细节）都是现场执行的关键，绝对不能少。
-
-这次我把这份《执行清单》的内容，**逐字逐句翻译成英文**，并以一个极其专业的 **“Researcher Script & Checklist”** 模块，完美嵌入到了网页的 `06 / Coursework materials` 区域。
-
-请**全选复制**下面这整段最终的代码，覆盖你的 `index.html`。这次所有内容（包括《测量手册》和《执行清单》）全都完整无缺，绝对没有任何遗漏：
-
-```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -146,14 +139,15 @@
 
 <section id="survey" style="background:#eeeff8;"><div class="wrap"><div class="section-head"><div class="kicker">05 / Pre-study questionnaire</div><h2>Participant grouping & survey structure.</h2><p>Explore participants' MBTI-inspired decision preferences and initial expectations.</p></div><div class="survey-layout"><div class="card survey-main"><h3>Survey Structure & Grouping</h3><div class="survey-parts" style="grid-template-columns: repeat(4, 1fr);"><div class="survey-part"><strong>01 · Background</strong><small>Identity, major, AI usage frequency, and career anxiety.</small></div><div class="survey-part"><strong>02 · Decision Preferences</strong><small>A group-designed T/F scale (1-5 points) based on the MBTI framework. Used for Mean Split grouping.</small></div><div class="survey-part"><strong>03 · Initial Expectations</strong><small>Views on AI career advice and expectations for the study.</small></div><div class="survey-part"><strong>04 · Experiment Invitation</strong><small>Collects willingness to participate in the formal experiment and contact information.</small></div></div><p class="survey-note">*Grouping Method: We collected ~80 responses initially. After excluding non-target groups, 42 valid samples remained. A Mean Split was applied to divide participants into T and F groups to avoid sample loss and uneven group sizes.</p><p class="survey-note">*Note: The T/F questions in Part 2 are self-compiled by the group and inspired by the MBTI framework. They are not the official MBTI assessment.</p></div><aside class="card qr-card"><img src="survey-qr.jpg" alt="QR code for the full pre-study questionnaire" width="230" height="230"><h3>Full Pre-study Survey</h3><p>Scan with your phone to view the original questionnaire.</p></aside></div></div></section>
 
-<!-- 整合了《实验现场执行清单》的内容 -->
-<section id="materials" class="materials"><div class="wrap"><div class="section-head"><div class="kicker">06 / Coursework materials & execution checklist</div><h2>Materials & Researcher Script.</h2><p>Includes the Wizard of Oz AI responses and the detailed on-site execution checklist.</p></div>
+<!-- 整合了《实验现场执行清单》的内容 (浅色版) -->
+<section id="materials" style="background:#f7f8fc; color:var(--ink);"><div class="wrap"><div class="section-head"><div class="kicker" style="color:var(--violet);">06 / Coursework materials & execution checklist</div><h2>Materials & Researcher Script.</h2><p>Includes the Wizard of Oz AI responses and the detailed on-site execution checklist.</p></div>
     
-    <div class="survey-main" style="background:#ffffff09; border-color:#ffffff26; color:#fff; padding:40px; border-radius:22px; border:1px solid #ffffff26;">
-        <h3 style="color:#fff; margin-top:0;">Researcher Script & Checklist</h3>
-        <div style="background:#ffffff13; padding:20px; border-radius:12px; margin-bottom:25px; border-left:4px solid #bfaeff;">
-            <strong style="color:#fff;">Preparation Checklist:</strong>
-            <ul style="color:#b8c3d7; margin:10px 0 0 20px; padding:0;">
+    <div class="survey-main" style="background:#fff; border-color:var(--line); color:var(--ink); padding:40px; border-radius:22px; border:1px solid var(--line); box-shadow:0 12px 34px #19284506;">
+        <h3 style="color:var(--ink); margin-top:0;">Researcher Script & Checklist</h3>
+        
+        <div style="background:#f6f3ff; padding:20px; border-radius:12px; margin-bottom:25px; border-left:4px solid var(--violet);">
+            <strong style="color:var(--ink);">Preparation Checklist:</strong>
+            <ul style="color:var(--muted); margin:10px 0 0 20px; padding:0;">
                 <li>[ ] Confirm informed consent is signed.</li>
                 <li>[ ] Confirm participant's T/F grouping (check pre-study list).</li>
                 <li>[ ] Confirm randomized presentation order and prepare the correct GEW form (<strong>GEW 2 for Empathetic</strong>, <strong>GEW 3 for Analytical</strong>).</li>
@@ -161,18 +155,18 @@
             </ul>
         </div>
 
-        <div style="color:#b8c3d7; font-size:15px; line-height:1.8;">
-            <p><strong style="color:#fff;">Step 0: Consent Form</strong><br>Participants read and sign the informed consent form.</p>
+        <div style="color:var(--muted); font-size:15px; line-height:1.8;">
+            <p><strong style="color:var(--ink);">Step 0: Consent Form</strong><br>Participants read and sign the informed consent form.</p>
             
-            <p><strong style="color:#fff;">Step 1: Scenario & Baseline</strong><br>"Hello, thank you for participating! First, please read this job-seeking scenario carefully and try to immerse yourself in it. After reading, please complete GEW 1 based on your true feelings right now."<br><br><em>"Imagine you are about to graduate and job hunt. Today you just had an interview at a very desirable company. But you feel you performed terribly and your answers were logically messy. Now, you feel anxious and confused, so you open Career Buddy for help."</em></p>
+            <p><strong style="color:var(--ink);">Step 1: Scenario & Baseline</strong><br>"Hello, thank you for participating! First, please read this job-seeking scenario carefully and try to immerse yourself in it. After reading, please complete GEW 1 based on your true feelings right now."<br><br><em style="color:var(--violet);">"Imagine you are about to graduate and job hunt. Today you just had an interview at a very desirable company. But you feel you performed terribly and your answers were logically messy. Now, you feel anxious and confused, so you open Career Buddy for help."</em></p>
 
-            <p><strong style="color:#fff;">Step 2: First Interaction</strong><br>"Next, you will have a conversation with the AI assistant. Please input this text first: <em>'I feel like I completely messed up the interview today, my logic was all over the place. I'm so anxious, what should I do?'</em> Then read the AI's reply carefully, and fill out GEW 2/3 when you finish. (Reminder: Don't mix them up)."</p>
+            <p><strong style="color:var(--ink);">Step 2: First Interaction</strong><br>"Next, you will have a conversation with the AI assistant. Please input this text first: <em style="color:var(--violet);">'I feel like I completely messed up the interview today, my logic was all over the place. I'm so anxious, what should I do?'</em> Then read the AI's reply carefully, and fill out GEW 2/3 when you finish. (Reminder: Don't mix them up)."</p>
 
-            <p><strong style="color:#fff;">Step 3: Second Interaction</strong><br>"Now please continue to input the second text: <em>'What should I do next? Should I keep sending resumes to other companies? It feels hopeless.'</em> Then read the AI's reply carefully, and fill out GEW 2/3 when you finish."</p>
+            <p><strong style="color:var(--ink);">Step 3: Second Interaction</strong><br>"Now please continue to input the second text: <em style="color:var(--violet);">'What should I do next? Should I keep sending resumes to other companies? It feels hopeless.'</em> Then read the AI's reply carefully, and fill out GEW 2/3 when you finish."</p>
 
-            <p><strong style="color:#fff;">Step 4: Post-study Comprehensive Evaluation</strong><br>"Thank you for the experience. Now, please comprehensively review the two AI replies just now. Please evaluate your trust (TIAS) and perceived empathy (PETS) separately for the 'first style' and the 'second style'."</p>
+            <p><strong style="color:var(--ink);">Step 4: Post-study Comprehensive Evaluation</strong><br>"Thank you for the experience. Now, please comprehensively review the two AI replies just now. Please evaluate your trust (TIAS) and perceived empathy (PETS) separately for the 'first style' and the 'second style'."</p>
 
-            <p><strong style="color:#fff;">Step 5: Interview</strong><br>"Thank you for participating. Next, I will ask you three short questions to hear your true feelings about the two AI replies. The interview content is only for academic research, there are no right or wrong answers, and you can speak freely."<br>
+            <p><strong style="color:var(--ink);">Step 5: Interview</strong><br>"Thank you for participating. Next, I will ask you three short questions to hear your true feelings about the two AI replies. The interview content is only for academic research, there are no right or wrong answers, and you can speak freely."<br>
             1. Which AI reply style do you personally prefer? Why?<br>
             2. If you really failed an interview in reality, which reply would make you feel better, or make you think it is more reliable?<br>
             3. If you were to use this AI career assistant in the future, what style would you want it to have? Is it one that gives you direct advice, or one that takes care of your emotions first?</p>
@@ -180,10 +174,26 @@
     </div>
 
     <div class="material-list" style="margin-top: 20px;">
-        <div class="material"><h3>Information sheet & consent form</h3><p>Participants signed consent before Step 0.</p><span class="pending">Awaiting group material</span></div>
-        <div class="material"><h3>AI response materials (A1/B1 & A2/B2)</h3><p>The analytical and empathetic response texts used for the Wizard of Oz setup.</p><span class="pending">Awaiting group material</span></div>
-        <div class="material"><h3>Sample data & reflection</h3><p>Genuine pilot observations (e.g., Mean Split grouping data) and reflections.</p><span class="pending">No data entered</span></div>
-        <div class="material"><h3>Interview Audio Records</h3><p>Ensure recordings are anonymized and stored securely.</p><span class="pending">Awaiting group material</span></div>
+        <div class="material" style="background:#fff; border-color:var(--line); color:var(--ink); box-shadow:0 12px 34px #19284506;">
+            <h3 style="color:var(--ink);">Information sheet & consent form</h3>
+            <p style="color:var(--muted);">Participants signed consent before Step 0.</p>
+            <span class="pending" style="color:#b87a25; background:#fdf3e7;">Awaiting group material</span>
+        </div>
+        <div class="material" style="background:#fff; border-color:var(--line); color:var(--ink); box-shadow:0 12px 34px #19284506;">
+            <h3 style="color:var(--ink);">AI response materials (A1/B1 & A2/B2)</h3>
+            <p style="color:var(--muted);">The analytical and empathetic response texts used for the Wizard of Oz setup.</p>
+            <span class="pending" style="color:#b87a25; background:#fdf3e7;">Awaiting group material</span>
+        </div>
+        <div class="material" style="background:#fff; border-color:var(--line); color:var(--ink); box-shadow:0 12px 34px #19284506;">
+            <h3 style="color:var(--ink);">Sample data & reflection</h3>
+            <p style="color:var(--muted);">Genuine pilot observations (e.g., Mean Split grouping data) and reflections.</p>
+            <span class="pending" style="color:#b87a25; background:#fdf3e7;">No data entered</span>
+        </div>
+        <div class="material" style="background:#fff; border-color:var(--line); color:var(--ink); box-shadow:0 12px 34px #19284506;">
+            <h3 style="color:var(--ink);">Interview Audio Records</h3>
+            <p style="color:var(--muted);">Ensure recordings are anonymized and stored securely.</p>
+            <span class="pending" style="color:#b87a25; background:#fdf3e7;">Awaiting group material</span>
+        </div>
     </div>
 </div></section>
 
@@ -199,4 +209,3 @@
 <footer class="footer"><div class="wrap"><span>Career Buddy · ADS401 evaluation design</span><span>Study plan · Materials and sample data to be supplied by the group</span></div></footer>
 </body>
 </html>
-```
