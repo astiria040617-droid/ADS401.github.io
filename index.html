@@ -26,20 +26,130 @@
 <section id="question"><div class="wrap"><div class="section-head"><div class="kicker">01 / Research focus</div><h2>The question behind the design.</h2><p>Career decisions can involve both a need for practical information and a need for emotional support.</p></div><div class="card rq"><h3>Does the effect of AI career advice style on users’ emotional responses and trust differ between users with Thinking–Feeling preference?</h3><p>Target users: XJTLU students with career planning needs.</p><div class="chips"><span class="chip">AI advice style</span><span class="chip">T/F preference</span><span class="chip">Emotional responses</span><span class="chip">Trust</span></div></div></div></section>
 <section id="design" class="design"><div class="wrap"><div class="section-head"><div class="kicker">02 / Study design</div><h2>Two styles. Two preference groups.</h2><p>A 2 × 2 mixed factorial design: T/F preference is a measured between-subjects factor, and AI advice style is a within-subjects factor. Every participant evaluates both A and B.</p></div><div class="grid"><div class="card design-card"><div class="number">MANIPULATED CONDITION</div><h3>AI advice style</h3><p>A: analytical advice focused on practical information and reasoning. B: empathetic advice that acknowledges users’ feelings while offering career guidance.</p></div><div class="card design-card"><div class="number">MEASURED GROUPING VARIABLE</div><h3>T/F preference</h3><p>Thinking (T) or Feeling (F) decision-making preference, based on the MBTI Thinking–Feeling framework and explored with our pre-study questionnaire. This questionnaire is not the official MBTI assessment.</p></div><div class="card design-card accent"><div class="number">PRIMARY OUTCOMES</div><h3>Emotional responses & trust</h3><p>Compare each participant’s reported emotional responses and trust after A and after B, then examine whether the difference varies by T/F preference.</p></div><div class="card design-card"><div class="number">SECONDARY MEASURE</div><h3>Perceived empathy</h3><p>PETS can check whether participants perceive the empathetic advice as more empathic.</p></div></div><div class="matrix"><table><thead><tr><th scope="col">Preference</th><th scope="col">A · Analytical advice</th><th scope="col">B · Empathetic advice</th></tr></thead><tbody><tr><th scope="row">Thinking (T)</th><td><span>T + A</span><small>Same T participants rate both styles</small></td><td><span>T + B</span><small>Same T participants rate both styles</small></td></tr><tr><th scope="row">Feeling (F)</th><td><span>F + A</span><small>Same F participants rate both styles</small></td><td><span>F + B</span><small>Same F participants rate both styles</small></td></tr></tbody></table></div></div></section>
 <section id="plan"><div class="wrap"><div class="section-head"><div class="kicker">03 / Experiment plan</div><h2>From recruitment to response.</h2><p>Planned recruitment: 42 valid XJTLU students through convenience sampling. To avoid uneven groups, T/F grouping was determined using a Mean Split on the pre-study questionnaire scores.</p></div><div class="methods-strip"><div class="card method-tile"><strong>Design</strong><span>2 × 2 mixed factorial; every participant evaluates both AI styles.</span></div><div class="card method-tile"><strong>Sampling</strong><span>Convenience sampling of 42 XJTLU students; recruitment is not random.</span></div><div class="card method-tile"><strong>Counterbalancing</strong><span>The system randomly assigns the order of styles (AB or BA) to control for order effects.</span></div><div class="card method-tile"><strong>Data collection</strong><span>Pre-study questionnaire, GEW, TIAS, PETS, and brief interview comments.</span></div></div><div class="steps"><div class="card step"><span class="step-no">01</span><h3>Pre-study Questionnaire & Grouping</h3><p>Students complete a T/F decision-making preference survey. A mean split is used to divide them into T and F groups.</p></div><div class="card step"><span class="step-no">02</span><h3>Scenario & Baseline</h3><p>Participants read an interview failure scenario, then complete GEW 1 to measure baseline emotion.</p></div><div class="card step"><span class="step-no">03</span><h3>Interaction & Rating</h3><p>They input 2 fixed scripts, receive random AI responses, complete GEW 2/3, and finally rate TIAS & PETS.</p></div></div><div class="callout"><strong>Wizard of Oz Control.</strong> To ensure strict control over word count and style purity, we used pre-written text responses delivered via a simulated chat interface, rather than live LLM generation.</div></div></section>
-<section id="measures" style="padding-top:0"><div class="wrap"><div class="section-head"><div class="kicker">04 / Evaluation methods</div><h2>What the study plans to collect.</h2></div><div class="measure"><div class="card"><span class="label">Primary · emotion</span><h3>Geneva Emotion Wheel (GEW 3.0)</h3><p>Administered 3 times (Baseline, after A, after B). Measures 20 emotion families on a 5-point intensity scale.</p></div><div class="card"><span class="label">Primary · trust</span><h3>Trust in Automation Scale (TIAS)</h3><p>12 items, 7-point Likert scale. Measures trust after experiencing both styles (Items 1-5 are reverse-scored).</p></div><div class="card"><span class="label">Secondary · empathy</span><h3>Perceived Empathy of Technology Scale (PETS)</h3><p>10 items, two factors: Emotional Response (6 items) and Understanding & Trust (4 items). Must not be modified.</p></div></div></div></section>
-<section id="survey"><div class="wrap"><div class="section-head"><div class="kicker">05 / Experimental materials</div><h2>Scripts and AI Responses.</h2><p>We fixed the interaction scripts to maintain conversational flow. The AI responses are strictly controlled to be purely analytical or purely empathetic.</p></div><div class="survey-layout"><div class="card survey-main"><h3>The Scenario & Scripts</h3><div class="survey-parts"><div class="survey-part"><strong>Scenario Setup</strong><small>You just had an interview at a dream company but felt you performed terribly. You feel anxious and open Career Buddy for help.</small></div><div class="survey-part"><strong>Script 1</strong><small>"I feel like I completely messed up the interview today... I'm so anxious, what should I do?"</small></div><div class="survey-part"><strong>Script 2</strong><small>"What should I do next? Should I keep sending resumes? It feels hopeless."</small></div></div><h3 style="margin-top: 20px;">AI Response Examples</h3><ul class="sample-questions">
-    <li><strong>Analytical (A1):</strong> "We need a structured review... 1. Use STAR method. 2. Build a question bank. Data shows 3 mock interviews significantly improve pass rates..."</li>
-    <li><strong>Empathetic (B1):</strong> "I completely understand your frustration. It's normal to be nervous... You don't need to blame yourself. Take a deep breath. Which part made you feel the worst?"</li>
-</ul><p class="survey-note">Participants experienced both styles. The order was randomized to control for order effects.</p></div><aside class="card qr-card"><img src="survey-qr.jpg" alt="QR code for the full pre-study questionnaire" width="230" height="230"><h3>Full Pre-study Survey</h3><p>Scan with your phone to view the original questionnaire.</p></aside></div></div></section>
+
+<!-- ================= 修改后的 MEASURES 部分 ================= -->
+<section id="measures" style="padding-top:0"><div class="wrap"><div class="section-head"><div class="kicker">04 / Evaluation methods</div><h2>What the study plans to collect.</h2><p>Detailed measurement instruments and scoring criteria.</p></div>
+    
+    <!-- GEW -->
+    <div class="card" style="padding: 30px; margin-bottom: 20px;">
+        <span class="label">Primary Measure · Emotion</span>
+        <h3 style="margin-top: 5px;">Geneva Emotion Wheel (GEW 3.0)</h3>
+        <p style="margin-bottom: 15px;">Administered 3 times: Baseline (GEW 1), after Interaction 1 (GEW 2), and after Interaction 2 (GEW 3). Participants rate the intensity of their emotional response on a 5-point scale (1 = weakly, 5 = strongly) across 20 emotion families, or select "No emotion".</p>
+        <div class="survey-parts" style="grid-template-columns: repeat(4, 1fr);">
+            <div class="survey-part"><small>Interest, Pride, Relief, Regret, Contempt</small></div>
+            <div class="survey-part"><small>Amusement, Joy, Compassion, Shame, Hate</small></div>
+            <div class="survey-part"><small>Pleasure, Contentment, Sadness, Disappointment, Anger</small></div>
+            <div class="survey-part"><small>Admiration, Love, Guilt, Fear, Disgust</small></div>
+        </div>
+        <p class="survey-note">*Note: Researchers must match GEW 2 to the Empathetic style and GEW 3 to the Analytical style based on the randomized presentation order.</p>
+    </div>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+        <!-- TIAS -->
+        <div class="card" style="padding: 30px;">
+            <span class="label">Primary Measure · Trust</span>
+            <h3 style="margin-top: 5px;">Trust in Automation Scale (TIAS)</h3>
+            <p>Administered at Step 4. Evaluated for both styles. 12 items, 7-point Likert scale (1 = Not at all, 7 = Extremely). Items 1-5 are reverse-scored. "The system" is replaced by "The AI assistant".</p>
+            <div style="background: #f9f9f9; padding: 15px; border-radius: 10px; margin-top: 15px; font-size: 13px;">
+                <strong>Items (1-5 Reverse Scored):</strong><br>
+                1. The system is deceptive.<br>
+                2. The system behaves in an underhanded manner.<br>
+                3. I am suspicious of the system's intent, action, or output.<br>
+                4. I am wary of the system.<br>
+                5. The system's action will have a harmful outcome.<br>
+                <strong>Items (6-12):</strong><br>
+                6. I am confident in the system.<br>
+                7. The system provides security.<br>
+                8. The system has integrity.<br>
+                9. The system is dependable.<br>
+                10. The system is reliable.<br>
+                11. I can trust the system.<br>
+                12. I am familiar with the system.
+            </div>
+        </div>
+
+        <!-- PETS -->
+        <div class="card" style="padding: 30px;">
+            <span class="label">Secondary Measure · Empathy</span>
+            <h3 style="margin-top: 5px;">Perceived Empathy of Technology Scale (PETS)</h3>
+            <p>Administered at Step 4. Original scale uses a 101-point slider (strongly disagree to strongly agree). Contains 10 items across two factors. <em>Note: Cannot be modified.</em></p>
+            <div style="background: #f9f9f9; padding: 15px; border-radius: 10px; margin-top: 15px; font-size: 13px;">
+                <strong>Emotional Response (PETS-ER, 6 items):</strong><br>
+                E1. The system considered my mental state.<br>
+                E2. The system seemed emotionally intelligent.<br>
+                E3. The system expressed emotions.<br>
+                E4. The system sympathized with me.<br>
+                E5. The system showed interest in me.<br>
+                E6. The system supported me in coping with an emotional situation.<br>
+                <strong>Understanding & Trust (PETS-UT, 4 items):</strong><br>
+                U1. The system understood my goals.<br>
+                U2. The system understood my needs.<br>
+                U3. I trusted the system.<br>
+                U4. The system understood my intentions.
+            </div>
+        </div>
+    </div>
+</div></section>
+
+<!-- ================= 修改后的 PROCEDURE & MATERIALS 部分 ================= -->
+<section id="survey" style="background:#eeeff8; padding-bottom: 88px;"><div class="wrap"><div class="section-head"><div class="kicker">05 / Experiment procedure & materials</div><h2>From scenario to interview.</h2><p>Detailed execution steps with scripted materials and AI responses (Wizard of Oz setup).</p></div>
+    
+    <div class="survey-layout" style="grid-template-columns: 1fr;">
+        <!-- 实验流程与脚本 -->
+        <div class="card survey-main" style="padding: 40px;">
+            <h3>Experimental Flow & Scripts</h3>
+            
+            <div class="steps" style="margin-top: 20px;">
+                <div class="card step">
+                    <span class="step-no">01</span>
+                    <h3>Scenario & Baseline</h3>
+                    <p>"Imagine you are graduating soon. Today you had an interview at a dream company, but you feel you performed terribly. You are anxious. You open Career Buddy for help."<br><br>After reading, complete <strong>GEW 1</strong>.</p>
+                </div>
+                <div class="card step">
+                    <span class="step-no">02</span>
+                    <h3>Interaction 1</h3>
+                    <p>Input Script 1: <em>"I feel like I completely messed up the interview today, my logic was all over the place. I'm so anxious, what should I do?"</em><br><br>Read the AI response, then complete <strong>GEW 2/3</strong>.</p>
+                </div>
+                <div class="card step">
+                    <span class="step-no">03</span>
+                    <h3>Interaction 2</h3>
+                    <p>Input Script 2: <em>"What should I do next? Should I keep sending resumes? It feels hopeless."</em><br><br>Read the AI response, then complete <strong>GEW 2/3</strong>.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; border-top: 1px solid var(--line); padding-top: 25px;">
+                <h3>AI Response Materials</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+                    <div style="background: #f4f6fb; border-radius: 12px; padding: 20px; border: 1px solid #d9e2f0;">
+                        <strong style="color: var(--violet);">Analytical Style (A1)</strong>
+                        <p style="font-size: 14px; margin-top: 10px;">"Based on your interview failure, we need a structured review... 1. Use the STAR method. 2. Build a question bank. Data shows 3 mock interviews significantly improve pass rates. Do you need me to generate a template?"</p>
+                    </div>
+                    <div style="background: #f4f6fb; border-radius: 12px; padding: 20px; border: 1px solid #d9e2f0;">
+                        <strong style="color: var(--mint); color: #315d49;">Empathetic Style (B1)</strong>
+                        <p style="font-size: 14px; margin-top: 10px;">"I completely understand your frustration. It's normal to be nervous in front of a dream company... You don't need to blame yourself. Take a deep breath. Which part made you feel the worst?"</p>
+                    </div>
+                </div>
+                <p class="survey-note" style="margin-top: 20px;"><strong>*Wizard of Oz Control:</strong> The AI response is pre-scripted (animating for ~1.5 seconds) rather than live-generated, ensuring strict control over word count and pure style.</p>
+            </div>
+        </div>
+
+        <!-- 访谈 -->
+        <div class="card survey-main" style="padding: 40px;">
+            <h3>Step 5: Semi-structured Interview</h3>
+            <p style="color: var(--muted); margin-bottom: 20px;">After the survey, a 3-5 minute interview is conducted. Neutral probes are used based on participant responses.</p>
+            
+            <ol class="sample-questions" style="border-top: none; padding-top: 0;">
+                <li><strong>Which AI style do you prefer, and why?</strong> <br><em>Probe: Is it because it is efficient, or because it makes you feel comfortable/comforted?</em></li>
+                <li><strong>If you failed an interview in reality, which response would make you feel better or seem more reliable?</strong> <br><em>Probe: Can you point out specific sentences that moved you?</em></li>
+                <li><strong>In the future, what style would you want this AI assistant to have? Direct advice or emotional care?</strong> <br><em>Probe: Can you give an example based on your own job-hunting needs?</em></li>
+            </ol>
+        </div>
+    </div>
+</div></section>
+<!-- ================= 修改后的部分结束 ================= -->
+
 <section id="materials" class="materials"><div class="wrap"><div class="section-head"><div class="kicker">06 / Coursework materials</div><h2>Materials to add before submission.</h2><p>These items are listed in the CW2 brief. Replace each placeholder with your group’s own approved materials and real pilot data.</p></div><div class="material-list"><div class="material"><h3>Information sheet & consent form</h3><p>Participants signed consent before Step 0.</p><span class="pending">Awaiting group material</span></div><div class="material"><h3>Survey scripts & interview questions</h3><p>The pre-study questionnaire is linked above. Post-study instruments and interview questions are detailed in the PDF.</p><span class="pending">Post-study materials pending</span></div><div class="material"><h3>AI response materials</h3><p>The analytical and empathetic response texts used for the Wizard of Oz setup.</p><span class="pending">Awaiting group material</span></div><div class="material"><h3>Sample data & reflection</h3><p>Genuine pilot observations (e.g., Mean Split grouping data) and reflections.</p><span class="pending">No data entered</span></div></div></div></section>
 <section class="references"><div class="wrap"><div class="section-head"><div class="kicker">07 / References</div><h2>Sources behind the study.</h2><p>Research background and sources for the proposed measures.</p></div><ol>
 <li>Lee, I., &amp; Hahn, S. (2024). On the relationship between mind perception and social support of chatbots. <em>Frontiers in Psychology, 15</em>, Article 1282036. <a href="https://doi.org/10.3389/fpsyg.2024.1282036" target="_blank" rel="noopener noreferrer">https://doi.org/10.3389/fpsyg.2024.1282036</a> <small>— Chatbot informational and emotional support conditions</small></li>
 <li>Hough, J. R., &amp; Ogilvie, D. (2005). An empirical test of cognitive style and strategic decision outcomes. <em>Journal of Management Studies, 42</em>(2), 417–448. <a href="https://doi.org/10.1111/j.1467-6486.2005.00502.x" target="_blank" rel="noopener noreferrer">https://doi.org/10.1111/j.1467-6486.2005.00502.x</a> <small>— MBTI-related cognitive style and strategic decisions</small></li>
-<li>Scherer, K. R., Shuman, V., Fontaine, J. R. J., &amp; Soriano, C. (2013). The GRID meets the Wheel: Assessing emotional feeling via self-report. In J. R. J. Fontaine, K. R. Scherer, &amp; C. Soriano (Eds.), <em>Components of emotional meaning: A sourcebook</em> (pp. 281–298). Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780199592746.003.0019" target="_blank" rel="noopener noreferrer">https://doi.org/10.1093/acprof:oso/9780199592746.003.0019</a> <small>— Geneva Emotion Wheel</small></li>
-<li>Jian, J.-Y., Bisantz, A. M., &amp; Drury, C. G. (2000). Foundations for an empirically determined scale of trust in automated systems. <em>International Journal of Cognitive Ergonomics, 4</em>(1), 53–71. <a href="https://doi.org/10.1207/S15327566IJCE0401_04" target="_blank" rel="noopener noreferrer">https://doi.org/10.1207/S15327566IJCE0401_04</a> <small>— Trust in Automation Scale</small></li>
-<li>Schmidmaier, M., Rupp, J., Cvetanova, D., &amp; Mayer, S. (2024). Perceived empathy of technology scale (PETS): Measuring empathy of systems toward the user. In <em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems</em>. Association for Computing Machinery. <a href="https://doi.org/10.1145/3613904.3642035" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3613904.3642035</a></li>
-<li>Myers, I. B., McCaulley, M. H., Quenk, N. L., &amp; Hammer, A. L. (2018). <em>MBTI® manual for the Global Step I™ and Step II™ assessments</em> (4th ed.). The Myers-Briggs Company. <a href="https://www.themyersbriggs.com/en-us/access-resources/all-about-the-mbti-assessment" target="_blank" rel="noreferrer">Publisher overview</a> <small>— MBTI Thinking–Feeling framework</small></li>
-</ol></div></section>
-</main><footer class="footer"><div class="wrap"><span>Career Buddy · ADS401 evaluation design</span><span>Study plan · Materials and sample data to be supplied by the group</span></div></footer>
-</body>
-</html>
+<li>Scherer, K. R., Shuman, V., Fontaine, J. R. J., &amp; Soriano, C. (2013). The GRID meets the Wheel: Assessing emotional feeling via self-report. In J. R. J. Fontaine, K. R. Scherer, &amp; C. Soriano (Eds.), <em>Components of emotional meaning: A sourcebook</em> (pp. 281–298). Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780199592746.003.0019" target
