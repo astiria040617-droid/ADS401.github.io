@@ -45,6 +45,14 @@
     @media(max-width:800px){.findings-chart-grid{grid-template-columns:1fr}}
     @media(max-width:600px){.findings-figure{padding:10px;border-radius:12px}.findings-table table{min-width:0;font-size:12px}.findings-table caption{padding:14px 12px;line-height:1.5}.findings-table th,.findings-table td{padding:10px 8px}.findings-table td{white-space:nowrap}.findings-table thead th{font-size:11px}.findings-copy h3{font-size:21px}}
 
+
+.result-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.result-card{background:#fff;border:1px solid #dce1eb;border-radius:18px;padding:clamp(20px,3vw,32px)}
+.result-card h3{font-size:1.17rem;line-height:1.35;color:#192a44;margin:0 0 12px}
+.result-card p{color:#40506b;line-height:1.7;margin:0;max-width:80ch}
+.result-card:first-child{grid-column:1/-1;background:#f4f1ff;border-left:5px solid #7258e8}
+.result-card:first-child p{font-size:1.12rem;color:#242e49}
+@media(max-width:720px){.result-cards{grid-template-columns:1fr;gap:12px}}
 </style>
 </head>
 <body>
@@ -297,19 +305,9 @@
   </div>
 </section>
 
-<section id="findings" class="findings">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Key findings</div>
-      <h2>Findings</h2>
-      <p>There is insufficient evidence to support the hypothesis that the effect of AI career advice style on users’ emotional responses and trust differs between users with Thinking and Feeling preferences.</p>
-    </div>
-    <div class="findings-copy">
-      <p>The mixed ANOVA results suggest that there is a statistically significant difference in perceived empathy (PETS total score) between the empathetic and analytical advice conditions, with empathetic advice receiving higher scores, <strong><em>F</em>(1, 21) = 8.49, <em>p</em> = .008, partial η² = .288</strong>.</p>
-      <p>However, no statistically significant differences between the two advice conditions were detected in positive emotion, negative emotion, or trust. No significant main effects of T/F preference or interactions between advice style and T/F preference were found for any of the four outcomes.</p>
-    </div>
-  </div>
-</section>
+<section id="findings" class="findings"><div class="wrap"><div class="section-head"><h2>Findings</h2></div><div class="result-cards"><article class="result-card"><h3>Answer to the research question</h3><p>There is insufficient evidence to support the hypothesis that the effect of AI career advice style on users’ emotional responses and trust differs between users with Thinking and Feeling preferences.</p></article>
+<article class="result-card"><h3>Perceived empathy</h3><p>The mixed ANOVA results suggest that there is a statistically significant difference in perceived empathy (PETS total score) between the empathetic and analytical advice conditions, with empathetic advice receiving higher scores, <strong><em>F</em>(1, 21) = 8.49, <em>p</em> = .008, partial η² = .288</strong>.</p></article>
+<article class="result-card"><h3>Emotion, trust and T/F preference</h3><p>However, no statistically significant differences between the two advice conditions were detected in positive emotion, negative emotion, or trust. No significant main effects of T/F preference or interactions between advice style and T/F preference were found for any of the four outcomes.</p></article></div></div></section>
 
 <section class="references"><div class="wrap"><div class="section-head"><div class="kicker">08 / References</div><h2>Sources behind the study.</h2><p>Research background and sources for the proposed measures.</p></div><ol>
 <li id="ref-1">Lee, I., &amp; Hahn, S. (2024). On the relationship between mind perception and social support of chatbots. <em>Frontiers in Psychology, 15</em>, Article 1282036. <a href="https://doi.org/10.3389/fpsyg.2024.1282036" target="_blank" rel="noopener noreferrer">https://doi.org/10.3389/fpsyg.2024.1282036</a> <small>— Chatbot informational and emotional support conditions</small></li>
